@@ -1,4 +1,4 @@
-import CartIcon from "../cart-icon/CartIcon";
+import CartIcon from "../CartIcon/CartIcon";
 import "./CartWidget.css";
 import { useState } from "react";
 
