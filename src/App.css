@@ -13,7 +13,21 @@
 .header__wrapper {
   display: flex;
   justify-content: space-between;
+
   padding: 1rem;
   background-color: #3f0d12;
   color: white;
+}
+
+.brand__navbar__wrapper {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: blue; */
+  width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  .brand__navbar__wrapper {
+    display: block;
+  }
 }

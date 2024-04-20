@@ -2,3 +2,13 @@ span {
   background-color: #a71d31;
   padding: 5px;
 }
+.cart__widget__wrapper {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 750px) {
+  .cart__widget__wrapper {
+    margin: 0px;
+  }
+}
