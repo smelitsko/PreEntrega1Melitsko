@@ -3,18 +3,22 @@ import Brand from "./components/Brand/Brand";
 import NavBar from "./components/NavBar/NavBar";
 import ButtonNavBar from "./components/ButtonNavBar/ButtonNavBar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
-
-const handleClick = () => {
-  console.log("Hiciste click");
-};
+import { useState } from "react";
+import ItemCount from "./components/ItemCount/ItemCount";
 
 function App() {
+  const [visible, setVisible] = useState(window.innerWidth > 750);
+
+  const handleClick = () => {
+    setVisible(!visible);
+  };
+
   return (
     <div>
       <div className="header__wrapper">
         <div className="brand__navbar__wrapper">
           <Brand />
-          <NavBar />
+          {(visible || window.innerWidth >= 750) && <NavBar />}
         </div>
         <ButtonNavBar callback={handleClick} />
       </div>

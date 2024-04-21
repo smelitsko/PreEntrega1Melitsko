@@ -3,11 +3,10 @@ import "./CartWidget.css";
 import { useState } from "react";
 
 function CartWidget() {
-  const [cartItems, setCartItems] = useState(7);
   return (
     <div className="cart__widget__wrapper">
       <CartIcon ancho={40} alto={40} />
-      <span>{cartItems}</span>
+      <span>7</span>
     </div>
   );
 }
