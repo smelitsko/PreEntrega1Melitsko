@@ -1,6 +1,5 @@
 import CartIcon from "../CartIcon/CartIcon";
 import "./CartWidget.css";
-import { useState } from "react";
 
 function CartWidget() {
   return (
